@@ -4,9 +4,11 @@
 
   <h1>saladict-ezmate-</h1>
 
-  <p>Windows 桌面翻譯小幫手：選取即譯、OneOCR 截圖辨識，仲有 AI 幫你寫好英文。</p>
+  <p>🖥️ Windows 桌面翻譯小幫手：🌐 選取即譯、📸 OneOCR 截圖辨識、✍️ AI 英文寫作。</p>
 
-  <p><strong>Windows x64 · OneOCR · Azure Translator · English Helper · Codex App Server</strong></p>
+  <p><strong>🖥️ Windows x64 · 📸 OneOCR · 🌐 Azure Translator · ✍️ English Helper · 🔌 Codex App Server</strong></p>
+
+  <p><strong>繁體中文</strong> | <a href="README_CN.md">简体中文</a></p>
 
 </div>
 
@@ -14,7 +16,7 @@
 
 圖示碗身嘅金色 **EZ** 標記，就係呢個改版嘅識別。
 
-## Windows OneOCR：截圖翻譯，一框就得
+## 📸 Windows OneOCR：截圖翻譯，一框就得
 
 **本版 OCR 已改用 Windows OneOCR——超強、無敵好用！**
 
@@ -28,7 +30,7 @@
 
 > 文字辨識可以本機完成；辨識後嘅文字會按你選用嘅翻譯服務處理。選擇線上翻譯時，文字仍會傳送到該服務。
 
-## Azure Translator：接入官方翻譯 API
+## 🌐 Azure Translator：接入官方翻譯 API
 
 新增 **Microsoft Azure Translator** 內建服務，可以使用自己嘅 Azure Translator 資源，包括 F0 資源(有每月免費額度,解決限流煩惱)。
 
@@ -43,13 +45,13 @@
 
 設定完成後，選取翻譯、輸入翻譯同截圖翻譯都可以使用 Azure。F0 嘅可用額度及限制以你嘅 Azure 資源為準。
 
-## English Helper：唔止翻譯，仲幫你寫好英文
+## ✍️ English Helper：唔止翻譯，仲幫你寫好英文
 
 **睇得明一句英文，同自己寫得自然，係兩回事。** English Helper 有獨立視窗同服務設定，適合寫訊息、回覆電郵、理解英文句子，或者檢查自己寫嘅英文。
 
 你可以自行修改 Prompt，調整語氣、程度同輸出格式。
 
-### 選擇你想用嘅 AI
+### 🤖 選擇你想用嘅 AI
 
 English Helper 支援 **Ollama、OpenAI、DeepSeek、Claude、OpenAI-compatible API**，以及 **Codex App Server**。支援串流顯示回覆。
 
@@ -57,11 +59,11 @@ English Helper 支援 **Ollama、OpenAI、DeepSeek、Claude、OpenAI-compatible 
 
 選取文字後按快捷鍵，可以直接帶入 Helper；亦可以打開視窗自行輸入。想用本機模型，可以選擇 Ollama，預先安裝及下載模型後使用。
 
-## Codex App Server：English Helper 亦可以用 Codex
+## 🔌 Codex App Server：English Helper 亦可以用 Codex
 
 如果你已有 Codex CLI，可以將 **Codex App Server** 作為 English Helper 嘅 AI 供應商，沿用該 server 嘅登入狀態，毋須喺 Saladict 再填 Codex API Key。
 
-### 推薦搭配：Codex EzMate
+### ⭐ 推薦搭配：Codex EzMate
 
 想更方便管理 App Server，推薦搭配我開發嘅 **[Codex EzMate](https://github.com/lkamhk/CodexEzMate)**——Windows 上嘅 Codex 常駐助手。佢可以喺背景啟動或重用本機 App Server，提供登入、連線狀態、重新啟動同意外退出後恢復，方便 English Helper 隨時連線使用。
 
@@ -71,7 +73,7 @@ Codex EzMate 嘅預設 App Server 地址同樣係 `ws://127.0.0.1:4500`。代管
 
 > **Codex EzMate 尚未正式發佈**，歡迎先關注 [GitHub 專案](https://github.com/lkamhk/CodexEzMate)，留意之後嘅發佈消息。
 
-### 首次設定
+### ⚙️ 首次設定
 
 先完成 Codex CLI 登入：
 
@@ -97,7 +99,7 @@ codex app-server --listen ws://127.0.0.1:4500
 
 每次 Helper 查詢會建立獨立 **ephemeral thread**，唔沿用上一句對話。Saladict 本機翻譯歷史係另一項設定；如不想保留，請開啟「翻譯設定 → 停用歷史記錄」。
 
-## 其他日常功能
+## 🧰 其他日常功能
 
 | 功能         | 用法                             |
 | ------------ | -------------------------------- |
@@ -113,7 +115,7 @@ codex app-server --listen ws://127.0.0.1:4500
 
 免費公共翻譯服務可能限流；如果遇到 429，可稍後重試或切換服務。
 
-## 開始使用
+## 🚀 開始使用
 
 本版以 **Windows 11 x64** 為使用環境，圖形介面使用 WebView2。
 
@@ -124,7 +126,7 @@ codex app-server --listen ws://127.0.0.1:4500
 
 OneOCR 需要完整嘅引擎及模型資源，請勿只單獨搬走主程式 EXE。若出現資源缺失訊息，請重新安裝完整程式。
 
-## 從原始碼開發
+## 🛠️ 從原始碼開發
 
 準備 Node.js、pnpm、Rust、Windows C++ Build Tools 及 WebView2，再喺專案目錄執行：
 
@@ -135,7 +137,7 @@ pnpm tauri dev
 
 測試 OneOCR 時，需要喺 `src-tauri/resources/oneocr/` 準備 `oneocr.dll`、`oneocr.onemodel` 同 `onnxruntime.dll`。
 
-## 回報問題與致謝
+## 💬 回報問題與致謝
 
 遇到問題或有功能建議，歡迎到 [GitHub Issues](https://github.com/lkamhk/saladict-ezmate-/issues) 留言。回報時附上程式版本、Windows 版本、使用嘅服務同重現步驟，請勿貼出 API Key。
 
