@@ -71,7 +71,7 @@ English Helper 支援 **Ollama、OpenAI、DeepSeek、Claude、OpenAI-compatible 
 
 Codex EzMate 嘅預設 App Server 地址同樣係 `ws://127.0.0.1:4500`。代管 Server 啟動後，喺 English Helper 填入相同地址，再按「測試連線／讀取模型」即可。
 
-> **Codex EzMate 尚未正式發佈**，歡迎先關注 [GitHub 專案](https://github.com/lkamhk/CodexEzMate)，留意之後嘅發佈消息。
+> 🎉 **Codex EzMate 已正式發佈！** 歡迎到 [下載最新版本](https://github.com/lkamhk/CodexEzMate/releases/latest) 取得 Windows x64 安裝版或免安裝版，搭配 English Helper 使用；功能介紹同使用方法請睇 [GitHub 專案](https://github.com/lkamhk/CodexEzMate)。
 
 ### ⚙️ 首次設定
 
